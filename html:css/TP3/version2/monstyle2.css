@@ -1,0 +1,72 @@
+body{   margin:3%;
+        font-size: 90%; 
+        color:black;
+        font-family:  Verdana, Arial, Helvetica, sans-serif;
+    }
+h1  {   font-size:35px;
+        font-style: italic;
+        text-align:center;
+        color: #a44a3f;
+        
+    }
+h2  {   color:#262626; 
+        font-variant:small-caps; 
+        background:#b5838d; 
+        margin: 10px; 
+        padding: 5px; 
+    }
+h3  {   text-decoration: underline;
+        color: #030027;
+        margin-left: 20px;}
+h4  {     
+        margin-left:20px;
+        text-decoration:underline;
+    }   
+p   {   margin-left:20px;
+        border-style: none none none solid; 
+        border-width:3px ;
+        border-color:#a44a3f;
+    }
+#entete {   text-align:center; 
+            margin: 20px; 
+            border-style:dashed;
+            border-width: 4px;
+            border-color: indianred; 
+            background-color:#efd3d7;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; 
+        }
+li {    border-style: none none solid none; 
+        border-width:3px ;
+        border-color:#262626;
+        margin-left:20px;
+        padding: 1px;
+    }
+#photo  {  
+            margin: 20px;
+            width: 10%;     
+        }
+.partie {    list-style-image:url('puce.png');
+            margin:20px;
+            border-style: solid solid; 
+            border-width:3px ;
+            border-color:#a44a3f; 
+            background-color:#6d6875; 
+        }
+.date   {   border-style: none none none solid; 
+            border-width:3px ;
+            border-color:#a44a3f;
+            margin: 20px;   
+        }
+.langue {   padding: 20px; 
+            text-decoration:underline; 
+            text-decoration-color: indianred; 
+            text-decoration-style:solid;
+        }
+#fin{   margin:20px;
+        border-style: dashed; 
+        border-width:3px ;
+        border-color:#a44a3f;
+        background-color:#efd3d7; 
+        color: #262626;
+        text-align: center;
+    }

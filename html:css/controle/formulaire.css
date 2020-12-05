@@ -1,0 +1,42 @@
+
+body
+{
+    margin:50px;
+    color: black;
+    font: bold 0.9em verdana;
+}
+label
+{
+    display: block;
+    margin: 10px 0px;
+}
+.obligatoire
+{
+    color: rgba(168, 23, 23, 0.829);
+}
+#nom
+{
+    position: relative;
+    left: 195px;
+}
+p{
+    margin-top: 0px;
+    font-size: 0.6em;
+    color: dimgray;
+}
+input
+{
+    border: 1px solid rgb(177, 172, 172);
+    height: 20px;
+}
+input[type=submit]
+{
+    margin-top: 20px;
+    background-color: darkred;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.5em;
+    height: 25px;
+    width:75px;
+
+}

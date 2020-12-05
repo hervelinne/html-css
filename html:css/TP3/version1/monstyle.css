@@ -1,0 +1,49 @@
+body{   font-size:80%; 
+        margin-left:10%; 
+        color:white;
+        font-family:  Verdana, Arial, Helvetica, sans-serif;
+    }
+h1  {   text-align:center;}
+h2  {   color:#262626; 
+        font-variant:small-caps; 
+        background:#4dbfd9; 
+        margin: 10px; 
+        padding: 5px; 
+    }
+h3,p{   margin-left: 20px;
+    }
+h4  {   margin-left:20px;
+    }
+#entete{    text-align:center; 
+            margin: 20px; 
+            border-style:solid none;
+            border-width: 3px;
+            border-color: #82b440; 
+            background-color:#262626;
+        }
+#photo  {   float:right;
+            margin: 20px;
+            width: 10%;     
+        }
+li  {    margin-left:20px;
+        padding: 1px;
+    }
+.partie{    list-style-image:url('puce.png');
+            margin:20px;
+            border-style: solid none; 
+            border-width:3px ;
+            border-color:#82b440; 
+            background-color:#262626; 
+        }
+.date   {   margin: 20px;
+        }
+.langue {   padding: 20px; 
+            text-decoration:underline; 
+            text-decoration-color: gray; 
+            text-decoration-style:solid;
+        }
+#fin{   background-color:#262626; 
+        color: aliceblue;
+        text-align: center;
+    }
+

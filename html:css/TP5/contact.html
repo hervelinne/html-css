@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link href="mon_style2.css" rel="stylesheet"/>
+        <title>Contact</title>
+    </head>
+	<body>
+            <header>
+                <div id="titre_principal">
+                   
+                    <h1>Lina Ziat</h1>
+                    <h2>Ingénieur en Génie Logiciel</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="formation.html">Formation</a></li>
+                        <li><a href="experience.html">Expériences</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section>
+                <h2><b>Fomulaire : </b></h2>
+
+            <form method="POST" action="formulaire.php">
+            <fieldset>
+                <legend>Informations Personnelles</legend>
+
+                        <span class="label"><b>Civilité</b></span>
+                        <span>
+                            <input type="radio" name="civilite" value="Mlle"/>Mademoiselle
+                            <input type="radio" name="civilite" value="Mme" checked="checked"/>Madame
+                            <input type="radio" name="civilite" value="M"/>Monsieur        
+                        </span>
+                    
+                        <span class="label"><b>N°Apogee</b></span>
+                        <input type="text" name="apogee" size="30" maxlength="10"/>
+                    
+                        <span class="label"><b>Nom</b></span>
+                        <input type="text" name="nom" size="30"/>
+                    
+                        <span class="label"><b>Prénom</b></span>
+                        <input type="text" name="prenom" size="30"/>
+                    
+                        <span class="label"><b>Date de Naissance</b></span>
+                        <input type="date" name="date"/>
+                    
+                        <span class="label"><b>Adresse Mail</b></span>
+                        <input type="email" name="mail">
+
+                        <span class="label"><b>Adresse Postale</b></span>
+                        <textarea name="adresse" rows="2" cols="33" placeholder="Rue N°1"></textarea>
+
+                        <span class="label"><b>Ville</b></span>
+                            <select name="ville">
+                                <option value="RABAT">RABAT</option>
+                                <option value="KENITRA" selected="selected">KENITRA</option>
+                                <option value="CASABLANCA">CASABLANCA</option>
+                                <option value="SALE">SALE</option>
+                                <option value="TEMARA">TEMARA</option>
+                            </select>
+                
+                        <span class="label"><b>Code Postale</b></span>
+                        <input type="number" min="0" max="99" placeholder="14"/>   <input type="number" max="999" placeholder="000"/>
+                
+                        <span class="label"><b>Photo</b></span>
+                        <input name="pic" type="file"/>
+                
+                        <span class="label"><b>Languages</b></span>
+                        <span>
+                            <input type="checkbox" name="C" checked="checked"/>C
+                            <input type="checkbox" name="PYTHON" checked="checked"/>PYTHON
+                            <input type="checkbox" name="JAVA"/>JAVA
+                        </span>
+                        <span class="label"><b>Système d'exploitation</b></span>
+                        <select size="4" multiple>
+                            <option value="windows" selected="selected">Windows 2012 Server</option>
+                            <option value="linux">Linux CentOS</option>
+                            <option value="hp" selected="selected">HP-UX</option>
+                        </select>
+
+                        <span class="label"><b>Niveau en Html</b></span>
+                        <input type="range" min="0" max="10" step="1"/>
+                <p>
+                    <input type="submit" name="preview" formaction="preview.php" formmethod="get" value="prévisualiser"/>
+                    <input type="submit" name="envoyer" value="soumettre formulaire"/>
+                    <input type="reset" name="effacement" value="Effacer"/>
+                </p>
+                </fieldset>
+            </form>
+
+            </section>
+
+            <footer>
+                <div id="centre_interet">
+                    <h1>Centres d'interêt</h1>
+                    <p><img src="images/photographie.png" alt="Photographie" class="photo_interet"/>Photographie</p>
+                   
+              </div>
+                <div id="mes_photos">
+                    <h1>Mes photos</h1>
+                    <p><img src="images/photo1.jpg" alt="Photographie" class="photo_zoom"/><img src="images/photo2.jpg" alt="Photographie" class="photo_zoom" />
+					<img src="images/photo3.jpg" alt="Photographie" class="photo_zoom" /><img src="images/photo4.jpg" alt="Photographie" class="photo_zoom" /></p>
+                </div>
+                <div id="mes_competences">
+                    <h1>Mes Compétences</h1>
+                <p><img src="images/css3.png" alt="css3" class="photo_comp"/><img src="images/html5.png" alt="html5" class="photo_comp" />
+				<img src="images/javascript.png" alt="javascript" class="photo_comp" /><img src="images/php.png" alt="php" class="photo_comp" />
+				<img src="images/ps.png" alt="ps" class="photo_comp" /><img src="images/xml.png" alt="xml" class="photo_comp" />
+				<img src="images/xpath.png" alt="xpath" class="photo_comp" /><img src="images/mysql.png" alt="mysql" class="photo_comp" /></p>
+                </div>
+          </footer>
+       
+    </body>
+</html>

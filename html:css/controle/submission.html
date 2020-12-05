@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="formulaire.css" type="text/css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+        <label>Name <span class="obligatoire">*</span></label>
+        <input type="text" size="30" required="required" name="First"/>
+        <input type="text" size="30" required="required" name="Last"/>
+        <p>First  <span id="nom">Last</span></p>       
+        <label>Carleton Email<span class="obligatoire">*</span></label>
+        <input type="email" name="email" required="required"/>
+        <p>We require a Catelon email adress, NOT Hotmail, Gmail, Yahoo, etc</p>
+        <label>Date of Worskshop <span class="obligatoire">*</span></label>
+        <input type="date" name="date" required="required"/>
+        <label>Workshop Start Time<span class="obligatoire">*</span></label>
+        <input type="number" name="time" required="required" min="01" max="12" step="1"/>:<input type="number" name="time" required="required" min="00" max="59" step="1"/> 
+        <select name="period"><option value="AM" selected="selected">AM</option><option value="PM">PM</option></select>
+        <label>Max. Number od Participants <span class="obligatoire">*</span></label>
+        <input type="text" size="30" pattern="[0-9]" required="required"/>
+        <label>Do you want this Workshop advertised in the Top-5 ? <span class="obligatoire">*</span></label>
+        <p><input type="radio" name="question"/>  Yes</p>
+        <p><input type="radio" name="question"/>  No</p>
+        <input type="submit" value="submit" id="submit"/>
+</body>
+</html>

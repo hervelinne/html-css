@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="fcd5ce" text="brown">
+    <form method="POST" action="formulaire.php" oninput="resultat.value=99*a.value+10*b.value">
+        <h3><label for="nom">Nom complet :</label></h3>
+        <input type="text" size="30" name="nom" id="nom" required="required" placeholder="le prénom suivi du Nom"/>
+        <br/><br/>
+        <h3><label for="mail">Adresse e-mail :</label></h3>
+        <input type="email" name="mail" id="mail" required="required"/>
+        <br/><br/>
+        <h3><label for="date">Date d'arrivée :</label></h3>
+        <input type="date" name="date" id="date"  required="required"/>
+        <br/><br/>
+        <h3><label for="time">Heure d'arrivée :</label></h3>
+        <input type="time" name="time" id="time" required="required"/>
+        <br/><br/>
+        <h3><label for="nbn">Nombre de nuitées (99€ par nuit) :</label></h3>
+        <input type="number" name="a" id="nbn" value="1"/> 
+        <br/><br/>
+        <h3><label for="nbi">Nombre d'invités (10€ par invité suppplémentaire) :</label></h3>
+        <input type="number" name="b" id="nbi" value="1"/>
+        <br/><br/>
+        <p>Total : <output name="resultat">99.00</output>€</p>
+        <h3><label for="promo">Code de promotion :</label></h3>
+        <input type="text" id="promo" name="promo" pattern="[A-Z][a-z]|[0-9]{6}"/>
+        <br/><br/>
+        <input type="submit" name="validation" value="effectuer la réservation"/>
+    </form> 
+</body>
+</html>

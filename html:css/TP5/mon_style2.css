@@ -1,0 +1,154 @@
+@font-face
+{ 
+    font-family:'philosopher';
+    src: url('philosopher/Philosopher-Regular.ttf')
+}
+body 
+{
+    background-image: url('images/fond.jpg');
+    width: 900px;
+    color: white;
+    margin: auto;
+    line-height: 1.5em;
+    font-family: 'philosopher',Arial, Helvetica, sans-serif;
+}
+#titre_principal
+{
+    font:normal 1.2em 'Tangerine';
+
+}
+header h1
+{
+    margin-bottom: 0%;
+}
+header h2
+{
+    margin-top: 0%;
+}
+header
+{
+    background: url('images/separateur.png') repeat-x;
+    background-position: bottom;
+}
+nav 
+{
+    display: inline;
+    width: 140px ;
+    text-align: center;
+    text-transform: uppercase ; 
+}
+nav li
+{
+    display: inline-block;
+    margin: 15px;
+}
+nav a
+{
+    font-size: 1.3em ;
+    padding-bottom: 3px;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001; 
+}
+section h2
+{
+    font: bold 30px;
+    text-align: center;
+    color: black;
+    text-decoration: overline;
+    margin-bottom: 2px;
+}
+fieldset 
+{
+    position: relative;
+    left: 40px;
+    width: 800px;
+    border: 2px dashed black;
+}
+legend
+{
+    font: italic bold;
+    text-shadow: 3px 3px 0px black ;
+}
+.label
+{
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px 30% 6px 6px;
+}
+input
+{
+    border-radius: 10px;
+}
+input[type=submit], input[type=reset]
+{
+    background-color: rgb(141, 240, 243);
+    color: black;
+    border-radius: 10px;
+}
+input[type=submit]:hover, input[type=reset]:hover
+{
+    background-color: teal;
+}
+input[type=submit]:active, input[type=reset]:active
+{
+    background-color: turquoise;
+    box-shadow: 1px 1px 1px cadetblue inset;
+}
+footer
+{
+    background: url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    padding-top: 15px;
+}
+footer h1
+{
+    font-family: 'philosopher';
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+footer p
+{
+    font-size: 0.8em;
+}
+#centre_interet, #mes_photos, #mes_competences
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+#centre_interet
+{
+    width: 26%;
+}
+#mes_photos
+{
+    width: 35%;
+}
+#mes_photos img
+{
+    border: solid black;
+    border-width:1px 1px 0px 1px ;
+    margin: 2px;
+}
+#mes_photos img:hover
+{
+    transform: scale(1.5);
+}
+#mes_competences img:hover
+{
+    transform: rotate(25deg);
+}
+#mes_photos img:first-child
+{
+    border-left: 0px;
+}
+#mes_photos img:last-child
+{
+    border-right: 0px;
+}

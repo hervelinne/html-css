@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>formulaire</title>
+    </head>
+    <body bgcolor="f0efeb" text="brown">
+        <h2><b><font color="black">Fomulaire d'inscription</font></b></h2>
+        <form method="POST" action="formulaire.php">
+            <fieldset>
+                
+                <legend><font color="3A2E39"><b><i><u>Informations Personnelles</u></i></b></font></legend>
+                <table cellpadding="10px" cellspacing="2px">
+                    <tr>
+                        <td><b>Civilité</b></td>
+                        <td>
+                            <input type="radio" name="civilite" value="Mlle"/>Mademoiselle
+                            <input type="radio" name="civilite" value="Mme" checked="checked"/>Madame
+                            <input type="radio" name="civilite" value="M"/>Monsieur        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>N°Apogee</b></td>
+                        <td><input type="text" name="apogee" size="30" maxlength="10"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Nom</b></td>
+                        <td><input type="text" name="nom" size="30"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Prénom</b></td>
+                        <td><input type="text" name="prenom" size="30"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Date de Naissance</b></td>
+                        <td><input type="date" name="date"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Adresse Mail</b></td>
+                        <td><input type="email" name="mail"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Adresse Postale</b></td>
+                        <td><textarea name="adresse" rows="2" cols="33" placeholder="Rue N°1"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><b>Ville</b></td>
+                        <td><select name="ville">
+                            <option value="RABAT">RABAT</option>
+                            <option value="KENITRA" selected="selected">KENITRA</option>
+                            <option value="CASABLANCA">CASABLANCA</option>
+                            <option value="SALE">SALE</option>
+                            <option value="TEMARA">TEMARA</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><b>Code Postale</b></td>
+                        <td><input type="number" min="0" max="99" placeholder="14"/>   <input type="number" max="999" placeholder="000"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Photo</b></td>
+                        <td><input name="pic" type="file"/></td>
+                    </tr>
+                    <tr>
+                        <td><b>Languages</b></td>
+                        <td>
+                            <input type="checkbox" name="C" checked="checked"/>C
+                            <input type="checkbox" name="PYTHON" checked="checked"/>PYTHON
+                            <input type="checkbox" name="JAVA"/>JAVA
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Système d'exploitation</b></td>
+                        <td><select size="4" multiple>
+                            <option value="windows" selected="selected">Windows 2012 Server</option>
+                            <option value="linux">Linux CentOS</option>
+                            <option value="hp" selected="selected">HP-UX</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><b>Niveau en Html</b></td>
+                        <td><input type="range" min="0" max="10" step="1"/></td>
+                    </tr>
+                </table>
+                            <input type="submit" name="preview" formaction="preview.php" formmethod="get" value="prévisualiser"/>
+                            <input type="submit" name="envoyer" value="soumettre formulaire"/>
+                            <input type="reset" name="effacement" value="Effacer"/>
+            </fieldset>
+        </form>
+    </body>
+</html>
